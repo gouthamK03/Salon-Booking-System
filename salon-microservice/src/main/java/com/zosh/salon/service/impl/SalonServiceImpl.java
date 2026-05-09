@@ -4,10 +4,13 @@ import com.zosh.salon.entity.Salon;
 import com.zosh.salon.payload.dto.SalonDTO;
 import com.zosh.salon.payload.dto.UserDTO;
 import com.zosh.salon.service.SalonService;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-public class Service implements SalonService {
+
+@Service
+public class SalonServiceImpl implements SalonService {
     @Override
     public Salon createSalon(SalonDTO salonDTO, UserDTO userDTO) {
         return null;
