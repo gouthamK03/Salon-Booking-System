@@ -35,13 +35,13 @@ public class Salon {
     private LocalTime open;
     @Column(nullable = false)
     private LocalTime close;
+    @Column(nullable = false)
+    private Long ownerId;
 
     public Salon() {
     }
 
-    public Salon(Long id, String name, String email, List<String> images,
-                 String phone, String address, String city, LocalTime open,
-                 LocalTime close) {
+    public Salon(Long id, String name, String email, List<String> images, String phone, String address, String city, LocalTime open, LocalTime close, Long ownerId) {
         this.id = id;
         this.name = name;
         this.email = email;
@@ -51,6 +51,15 @@ public class Salon {
         this.city = city;
         this.open = open;
         this.close = close;
+        this.ownerId = ownerId;
+    }
+
+    public Long getOwnerId() {
+        return ownerId;
+    }
+
+    public void setOwnerId(Long ownerId) {
+        this.ownerId = ownerId;
     }
 
     public Long getId() {
