@@ -12,7 +12,6 @@ public class SalonDTO {
 
     private String email;
 
-    @ElementCollection
     private List<String> images;
 
     private String phone;
@@ -23,22 +22,33 @@ public class SalonDTO {
 
     private LocalTime open;
     private LocalTime close;
-
+    private Long ownerId;
     public SalonDTO() {
     }
 
-    public SalonDTO(Long id, String name, String email, List<String> images,
-                 String phone, String address, String city, LocalTime open,
-                 LocalTime close) {
+
+    public SalonDTO(Long id, String name, String email,
+                    List<String> images, String phone,
+                    String address, LocalTime open,
+                    String city, LocalTime close, Long ownerId) {
         this.id = id;
         this.name = name;
         this.email = email;
         this.images = images;
         this.phone = phone;
         this.address = address;
-        this.city = city;
         this.open = open;
+        this.city = city;
         this.close = close;
+        this.ownerId = ownerId;
+    }
+
+    public Long getOwnerId() {
+        return ownerId;
+    }
+
+    public void setOwnerId(Long ownerId) {
+        this.ownerId = ownerId;
     }
 
     public Long getId() {
