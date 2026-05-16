@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="424a0e39-47a9-43a3-bdb5-aa05a8a1d139" name="Changes" comment="created SalonController and added few controller" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package-info" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="alternateBranch" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;gouthamK03&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/gouthamK03/Salon-Booking-System.git&quot;,
+    &quot;accountId&quot;: &quot;764e5eab-911d-4e38-87f9-549abe16b715&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="3DTwvmquqs2xleUpIhvA19BEcTx" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.SalonMicroserviceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.salonservice.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/2440552/Downloads/Salon-Booking-System/salon-microservice/src/main/java/com/zosh/salon&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.editor&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\2440552\Downloads\Salon-Booking-System\salon-microservice\src\main\java\com\zosh\salon" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.SalonMicroserviceApplication">
+    <configuration name="SalonMicroserviceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zosh.salon.SalonMicroserviceApplication" />
+      <module name="salon-microservice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zosh.salon.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="salonservice" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="cmdOptions" />
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list />
+            </option>
+            <option name="multimoduleDir" />
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="projectsCmdOptionValues">
+              <list />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/salon-microservice" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.SalonMicroserviceApplication" />
+      <item itemvalue="Maven.salonservice" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.SalonMicroserviceApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="424a0e39-47a9-43a3-bdb5-aa05a8a1d139" name="Changes" comment="" />
+      <created>1778319600094</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1778319600094</updated>
+    </task>
+    <task id="LOCAL-00001" summary="updated salon microservice's service layer impl class">
+      <option name="closed" value="true" />
+      <created>1778345337029</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1778345337029</updated>
+    </task>
+    <task id="LOCAL-00002" summary="create repository package and interface">
+      <option name="closed" value="true" />
+      <created>1778427622508</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1778427622508</updated>
+    </task>
+    <task id="LOCAL-00003" summary="updated Salon class and SalonRepository">
+      <option name="closed" value="true" />
+      <created>1778429169461</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1778429169461</updated>
+    </task>
+    <task id="LOCAL-00004" summary="updated Salon class">
+      <option name="closed" value="true" />
+      <created>1778429323468</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1778429323468</updated>
+    </task>
+    <task id="LOCAL-00005" summary="updated SalonRepository">
+      <option name="closed" value="true" />
+      <created>1778429821679</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1778429821679</updated>
+    </task>
+    <task id="LOCAL-00006" summary="created a config class for ModelMapper inbuilt class generation">
+      <option name="closed" value="true" />
+      <created>1778958246017</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1778958246017</updated>
+    </task>
+    <task id="LOCAL-00007" summary="updated the pom.xml for ModelMapper">
+      <option name="closed" value="true" />
+      <created>1778958268083</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1778958268083</updated>
+    </task>
+    <task id="LOCAL-00008" summary="updated SalonDTO with ownerId field">
+      <option name="closed" value="true" />
+      <created>1778958288049</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1778958288049</updated>
+    </task>
+    <task id="LOCAL-00009" summary="updated SalonService methods for exception Handling">
+      <option name="closed" value="true" />
+      <created>1778958321304</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1778958321304</updated>
+    </task>
+    <task id="LOCAL-00010" summary="updated SalonRepository for returning Optional instead of class directly">
+      <option name="closed" value="true" />
+      <created>1778958361636</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1778958361636</updated>
+    </task>
+    <task id="LOCAL-00011" summary="updated SalonServiceImpl with">
+      <option name="closed" value="true" />
+      <created>1778958393504</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1778958393504</updated>
+    </task>
+    <task id="LOCAL-00012" summary="created SalonController and added few controller">
+      <option name="closed" value="true" />
+      <created>1778958425265</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1778958425265</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="updated salon microservice,added DTOs and Started with service layer" />
+    <MESSAGE value="updated salon microservice's service layer impl class" />
+    <MESSAGE value="create repository package and class" />
+    <MESSAGE value="create repository package and interface" />
+    <MESSAGE value="updated Salon class and SalonRepository" />
+    <MESSAGE value="updated Salon class" />
+    <MESSAGE value="updated SalonRepository" />
+    <MESSAGE value="created a config class for ModelMapper inbuilt class generation" />
+    <MESSAGE value="updated the pom.xml for ModelMapper" />
+    <MESSAGE value="updated SalonDTO with ownerId field" />
+    <MESSAGE value="updated SalonService methods for exception Handling" />
+    <MESSAGE value="updated SalonRepository for returning Optional instead of class directly" />
+    <MESSAGE value="updated SalonServiceImpl with actual business logic" />
+    <MESSAGE value="created SalonController and added few controller" />
+    <option name="LAST_COMMIT_MESSAGE" value="created SalonController and added few controller" />
+  </component>
+</project>
