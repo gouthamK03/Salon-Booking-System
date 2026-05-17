@@ -63,4 +63,26 @@ public class SalonController {
         SalonDTO salonDTO = modelMapper.map(salon,SalonDTO.class);
         return ResponseEntity.ok(salonDTO);
     }
+
+    @GetMapping("/search")
+    public ResponseEntity<List<SalonDTO>> searchSalons(@RequestParam("city") String city){
+        UserDTO userDTO = new UserDTO();
+        userDTO.setId(1L);
+        List<Salon> salons = salonService.getSalonByCity(city);
+        List<SalonDTO> salonDTOS = salons.stream().map((salon)->{
+            SalonDTO salonDTO = modelMapper.map(salon,SalonDTO.class);
+            return salonDTO;
+        }).toList();
+        return  ResponseEntity.ok(salonDTOS);
+    }
+
+//    will get ownerId from the jwt token
+    @GetMapping("/owner")
+    public ResponseEntity<SalonDTO> getSalonById()throws Exception{
+        UserDTO userDTO = new UserDTO();
+        userDTO.setId(1L);
+        Salon salon = salonService.getSalonByOwnerId(userDTO.getId());
+        SalonDTO salonDTO = modelMapper.map(salon,SalonDTO.class);
+        return ResponseEntity.ok(salonDTO);
+    }
 }
