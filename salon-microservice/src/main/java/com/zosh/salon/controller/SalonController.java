@@ -45,8 +45,6 @@ public class SalonController {
 
     @GetMapping()
     public ResponseEntity<List<SalonDTO>> getAllSalons(){
-        UserDTO userDTO = new UserDTO();
-        userDTO.setId(1L);
         List<Salon> salons = salonService.getAllSalons();
         List<SalonDTO> salonDTOS = salons.stream().map((salon)->{
             SalonDTO salonDTO = modelMapper.map(salon,SalonDTO.class);
@@ -57,8 +55,6 @@ public class SalonController {
 
     @GetMapping("/{id}")
     public ResponseEntity<SalonDTO> getSalonById(@PathVariable Long id)throws Exception{
-        UserDTO userDTO = new UserDTO();
-        userDTO.setId(1L);
         Salon salon = salonService.getSalonById(id);
         SalonDTO salonDTO = modelMapper.map(salon,SalonDTO.class);
         return ResponseEntity.ok(salonDTO);
@@ -66,8 +62,6 @@ public class SalonController {
 
     @GetMapping("/search")
     public ResponseEntity<List<SalonDTO>> searchSalons(@RequestParam("city") String city){
-        UserDTO userDTO = new UserDTO();
-        userDTO.setId(1L);
         List<Salon> salons = salonService.getSalonByCity(city);
         List<SalonDTO> salonDTOS = salons.stream().map((salon)->{
             SalonDTO salonDTO = modelMapper.map(salon,SalonDTO.class);
