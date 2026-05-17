@@ -6,8 +6,11 @@ import com.zosh.salon.payload.dto.UserDTO;
 import com.zosh.salon.service.SalonService;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.Banner;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 @RequestMapping("/api/salons")
@@ -38,5 +41,15 @@ public class SalonController {
         Salon salon = salonService.updateSalon(salonDTO,userDTO,id);
         SalonDTO salonDTO1 = modelMapper.map(salon,SalonDTO.class);
         return ResponseEntity.ok(salonDTO1);
+    }
+
+    @GetMapping()
+    public ResponseEntity<List<SalonDTO>> getAllSalons(){
+        List<Salon> salons = salonService.getAllSalons();
+        List<SalonDTO> salonDTOS = salons.stream().map((salon)->{
+            SalonDTO salonDTO = modelMapper.map(salon,SalonDTO.class);
+            return salonDTO;
+        }).toList();
+        return  ResponseEntity.ok(salonDTOS);
     }
 }
