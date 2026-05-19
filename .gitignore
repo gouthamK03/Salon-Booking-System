@@ -1,0 +1,14 @@
+# Ignore the master IntelliJ configuration folder
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+# Ignore ALL target folders anywhere in the entire project
+**/target/
+target/
+
+# Ignore system junk
+.DS_Store
+Thumbs.db
