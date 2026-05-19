@@ -37,20 +37,32 @@ public class SalonServiceImpl implements SalonService {
 
     @Override
     public Salon updateSalon(SalonDTO req, UserDTO userDTO, Long salonId) throws Exception {
+        // 1. Fetch the salon or assign it to null
         Salon salon = salonRepository.findById(salonId).orElse(null);
-        if(salon != null && req.getOwnerId().equals(userDTO.getId())) {
-            salon.setAddress(req.getAddress());
-            salon.setCity(req.getCity());
-            salon.setEmail(req.getEmail());
-            salon.setImages(req.getImages());
-            salon.setOpen(req.getOpen());
-            salon.setClose(req.getClose());
-            salon.setOwnerId(userDTO.getId());
-            salon.setPhone(req.getPhone());
-            salon.setName(req.getName());
-            return salonRepository.save(salon);
+
+        // 2. CRITICAL: Check if the salon is null FIRST before doing anything else
+        if (salon == null) {
+            throw new Exception("Invalid salon");
         }
-        throw new Exception("Invalid salon");
+
+        // 3. Now that we are 100% sure 'salon' is not null, safely check permissions.
+        // We compare against 'salon.getOwnerId()' (from DB) instead of req.getOwnerId()
+        // because the database record is guaranteed to have an owner ID.
+        if (!salon.getOwnerId().equals(userDTO.getId())) {
+            throw new Exception("You don't have permission to update this salon");
+        }
+
+        // 4. Proceed with updating fields since both checks passed
+        salon.setAddress(req.getAddress());
+        salon.setCity(req.getCity());
+        salon.setEmail(req.getEmail());
+        salon.setImages(req.getImages());
+        salon.setOpen(req.getOpen());
+        salon.setClose(req.getClose());
+        salon.setPhone(req.getPhone());
+        salon.setName(req.getName());
+
+        return salonRepository.save(salon);
     }
 
     @Override
