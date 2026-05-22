@@ -6,6 +6,6 @@ public class HomeController {
 
     @GetMapping
     public String HomeControllerHandler(){
-        return "Welcome to category microservice of salon booking system";
+        return "Welcome to category microservice of Salon Booking System";
     }
 }
