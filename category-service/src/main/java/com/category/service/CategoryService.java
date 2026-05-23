@@ -1,8 +1,8 @@
-package com.zosh.service;
+package com.category.service;
 
 
-import com.zosh.dto.SalonDTO;
-import com.zosh.entity.Category;
+import com.category.dto.SalonDTO;
+import com.category.entity.Category;
 
 import java.util.Set;
 

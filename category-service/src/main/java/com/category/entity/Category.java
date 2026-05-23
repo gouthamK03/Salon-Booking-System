@@ -1,4 +1,4 @@
-package com.zosh.entity;
+package com.category.entity;
 
 import jakarta.annotation.Nullable;
 import jakarta.persistence.*;

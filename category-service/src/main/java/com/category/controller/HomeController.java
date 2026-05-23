@@ -1,4 +1,4 @@
-package com.zosh.controller;
+package com.category.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 

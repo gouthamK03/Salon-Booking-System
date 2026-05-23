@@ -1,9 +1,8 @@
-package com.zosh.controller;
+package com.category.controller;
 
-import com.zosh.dto.SalonDTO;
-import com.zosh.entity.Category;
-import com.zosh.service.CategoryService;
-import com.zosh.service.Impl.CategoryServiceImpl;
+import com.category.dto.SalonDTO;
+import com.category.entity.Category;
+import com.category.service.CategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

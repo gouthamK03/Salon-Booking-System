@@ -1,4 +1,4 @@
-package com.zosh.dto;
+package com.category.dto;
 
 
 public class UserDTO {

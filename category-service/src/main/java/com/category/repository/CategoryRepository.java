@@ -1,8 +1,7 @@
-package com.zosh.repository;
+package com.category.repository;
 
-import com.zosh.entity.Category;
+import com.category.entity.Category;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.jpa.repository.Query;
 
 import java.util.Set;
 

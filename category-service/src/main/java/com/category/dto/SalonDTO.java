@@ -1,4 +1,4 @@
-package com.zosh.dto;
+package com.category.dto;
 
 import java.time.LocalTime;
 import java.util.List;

@@ -1,9 +1,9 @@
-package com.zosh.service.Impl;
+package com.category.service.Impl;
 
-import com.zosh.dto.SalonDTO;
-import com.zosh.entity.Category;
-import com.zosh.repository.CategoryRepository;
-import com.zosh.service.CategoryService;
+import com.category.dto.SalonDTO;
+import com.category.entity.Category;
+import com.category.repository.CategoryRepository;
+import com.category.service.CategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
