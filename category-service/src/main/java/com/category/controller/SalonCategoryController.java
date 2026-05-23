@@ -18,7 +18,7 @@ public class SalonCategoryController {
         this.categoryService = categoryService;
     }
 
-    @PostMapping("/api/category")
+    @PostMapping()
     public ResponseEntity<Category> createCategory(@RequestBody Category category){
 //        we get the salonId later on by "KeyClock"
         SalonDTO salonDTO = new SalonDTO();
