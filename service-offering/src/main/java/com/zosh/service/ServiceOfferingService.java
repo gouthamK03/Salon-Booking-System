@@ -10,7 +10,7 @@ import java.util.Set;
 public interface ServiceOfferingService {
 
     ServiceOffering createService(SalonDTO salonDTO, ServiceDTO serviceDto, CategoryDTO categoryDto);
-    ServiceOffering updateService(Long id,ServiceOffering serviceOffering);
+    ServiceOffering updateService(Long id,ServiceOffering serviceOffering) throws Exception;
     Set<ServiceOffering> getServiceOfferingsBySalonId(Long salonId, Long categoryId);
     Set<ServiceOffering> getServicesByIds(Set<Long>ids);
 }
