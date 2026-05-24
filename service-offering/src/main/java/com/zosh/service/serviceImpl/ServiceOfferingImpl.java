@@ -8,7 +8,10 @@ import com.zosh.repository.ServiceRepository;
 import com.zosh.service.ServiceOfferingService;
 import org.springframework.stereotype.Service;
 
+import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 @Service
 public class ServiceOfferingImpl implements ServiceOfferingService {
@@ -38,17 +41,37 @@ public class ServiceOfferingImpl implements ServiceOfferingService {
         if(foundServiceOffering == null){
             throw new Exception("ServiceOffering with the given ID is not found");
         }
-
-        return null;
+        foundServiceOffering.setPrice(serviceOffering.getPrice());
+        foundServiceOffering.setName(serviceOffering.getName());
+        foundServiceOffering.setImage(serviceOffering.getImage());
+        foundServiceOffering.setDuration(serviceOffering.getDuration());
+        foundServiceOffering.setDescription(serviceOffering.getDescription());
+        return serviceRepository.save(foundServiceOffering);
     }
 
     @Override
     public Set<ServiceOffering> getServiceOfferingsBySalonId(Long salonId, Long categoryId) {
-        return Set.of();
+        Set<ServiceOffering> services = serviceRepository.findBySalonId(salonId);
+        if(categoryId != null){
+            services = services.stream().filter((service)->
+                    service.getCategoryId() != null && service.getCategoryId()==categoryId).collect(Collectors.toSet());
+        }
+        return services;
+
     }
 
     @Override
     public Set<ServiceOffering> getServicesByIds(Set<Long> ids) {
-        return Set.of();
+        List<ServiceOffering> services = serviceRepository.findAllById(ids);
+        return new HashSet<>(services);
+    }
+
+    @Override
+    public ServiceOffering getServiceOfferingById(Long id) throws Exception {
+        ServiceOffering foundServiceOffering = serviceRepository.findById(id).orElse(null);
+        if(foundServiceOffering == null){
+            throw new Exception("ServiceOffering with the given ID is not found");
+        }
+        return foundServiceOffering;
     }
 }
