@@ -31,7 +31,7 @@ public class SalonServiceOfferingController {
 
 //      the below categoryId we get from CategoryService through OpenFeign call
         CategoryDTO categoryDTO = new CategoryDTO();
-        categoryDTO.setId(serviceDTO.getCategoryId());
+        categoryDTO.setId(serviceDTO.getCategory());
 
         ServiceOffering createdServiceOffering = serviceOfferingService.createService(salonDTO,serviceDTO,categoryDTO);
         return new ResponseEntity<>(createdServiceOffering, HttpStatus.CREATED);
