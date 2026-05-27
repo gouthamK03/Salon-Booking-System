@@ -10,23 +10,22 @@ public class ServiceDTO {
     private int price;
     private int duration;
     private Long salonId;
-    private Long categoryId;
+    private Long category;
 
-    public ServiceDTO(Long id) {
-        this.id = id;
+    public ServiceDTO() {
     }
 
-    public ServiceDTO(Long categoryId, Long salonId,
-                      int duration, int price,
-                      String description, String image, String name, Long id) {
-        this.categoryId = categoryId;
-        this.salonId = salonId;
-        this.duration = duration;
-        this.price = price;
-        this.description = description;
-        this.image = image;
-        this.name = name;
+    public ServiceDTO(Long id, String name, String image,
+                      String description, int price,
+                      int duration, Long salonId, Long category) {
         this.id = id;
+        this.name = name;
+        this.image = image;
+        this.description = description;
+        this.price = price;
+        this.duration = duration;
+        this.salonId = salonId;
+        this.category = category;
     }
 
     public Long getId() {
@@ -85,11 +84,11 @@ public class ServiceDTO {
         this.salonId = salonId;
     }
 
-    public Long getCategoryId() {
-        return categoryId;
+    public Long getCategory() {
+        return category;
     }
 
-    public void setCategoryId(Long categoryId) {
-        this.categoryId = categoryId;
+    public void setCategory(Long category) {
+        this.category = category;
     }
 }
